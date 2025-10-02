@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d3b30 0%, #0d3b30 100%);
     min-height: 100vh;
 }
 
@@ -29,7 +29,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
     padding: 30px 0;
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(135deg, #000000 0%, #ceae5b 100%);
     color: white;
     border-radius: 10px;
     margin: -20px -20px 40px -20px;
@@ -348,7 +348,7 @@ body.org-chart-page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0d3b30 0%, #0d3b30 100%);
     min-height: 100vh;
 }
 
@@ -478,21 +478,10 @@ body.org-chart-page {
 }
 
 .ceo-to-finance {
-    width: 3px;
-    height: 80px;
-    right: -125px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.ceo-to-finance::after {
-    content: '';
-    position: absolute;
-    width: 250px;
+    width: 30px;
     height: 3px;
-    background: #34495e;
+    right: -30px;
     top: 50%;
-    right: -250px;
     transform: translateY(-50%);
 }
 
