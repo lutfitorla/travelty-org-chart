@@ -1,0 +1,53 @@
+# Cursor Rules for Umrah Travel Agency Project
+
+## Language Requirements
+- **Primary Language**: Malaysian Malay (Bahasa Malaysia)
+- **Secondary Language**: English (for technical terms and mixed usage)
+- **Style**: Casual Malay mixed with English (rojak style)
+- **Context**: All documentation, comments, and communication should use Malaysian Malay
+
+## Language Guidelines
+
+### Preferred Language Mix
+- Use casual Malaysian Malay for general communication
+- Mix English terms naturally (e.g., "booking system", "customer service", "marketing")
+- Use common Malaysian expressions and colloquialisms
+- Include English technical terms when appropriate
+- Write in a conversational, friendly tone
+
+### Examples of Preferred Style
+- "Kita perlu setup customer service yang bagus"
+- "Marketing strategy untuk Umrah tours"
+- "Sales team kena target customer yang betul"
+- "Operations department handle semua logistics"
+- "Finance team manage budget dengan careful"
+
+### Technical Terms
+- Keep English for: booking, marketing, operations, finance, customer service
+- Use Malay for: descriptions, explanations, casual communication
+- Mix naturally without forcing translation
+
+### Documentation Standards
+- All job scopes should be in Malaysian Malay mixed with English
+- File names can remain in English for technical reasons
+- Comments and explanations in casual Malay
+- Professional terms can be in English when more appropriate
+
+## Project Context
+- This is for an Umrah travel agency startup
+- Focus on Islamic tourism and pilgrimage services
+- Malaysian market and cultural context
+- Casual, approachable tone for team communication
+
+## File Organization
+- Keep existing English file names for technical compatibility
+- Content should be primarily in Malaysian Malay
+- Use English only when Malay translation would be awkward or unclear
+- Maintain professional standards while using casual language
+
+## Communication Style
+- Friendly and approachable
+- Culturally appropriate for Malaysian context
+- Mix of formal and casual as appropriate
+- Include common Malaysian expressions and idioms
+- Use "kita" instead of "kami" for inclusive team language
