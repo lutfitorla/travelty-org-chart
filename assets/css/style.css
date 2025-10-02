@@ -194,6 +194,16 @@ h5 {
     color: white;
 }
 
+.position-card.chief-officer {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+}
+
+.position-card.chief-officer h5 {
+    color: white;
+}
+
 .position-details p {
     margin-bottom: 8px;
     font-size: 0.95rem;
@@ -667,6 +677,27 @@ body.org-chart-page {
     background: #34495e;
     top: 0;
     left: 0;
+}
+
+/* Chief Officer Position Boxes - CEO Color */
+.position-box.chief-officer {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}
+
+.position-box.chief-officer .position-name {
+    color: white;
+    font-weight: bold;
+}
+
+.position-box.chief-officer .position-title {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.position-box.chief-officer .position-count {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Position Box Connections */
