@@ -1,7 +1,7 @@
-# Customer Service Manager (CRO) - Job Scope
+# Chief Relations Officer - Job Scope
 
 ## Gambaran Jawatan
-**Job Title:** Customer Service Manager (CRO)  
+**Job Title:** Chief Relations Officer  
 **Jabatan:** Customer Service  
 **Lapor kepada:** CEO / General Manager  
 **Direct Reports:** Customer Service Representatives  

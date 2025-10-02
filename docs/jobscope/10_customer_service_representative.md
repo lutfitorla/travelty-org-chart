@@ -3,7 +3,7 @@
 ## Gambaran Jawatan
 **Job Title:** Customer Service Representative  
 **Jabatan:** Customer Service  
-**Lapor kepada:** Customer Service Manager (CRO)  
+**Lapor kepada:** Chief Relations Officer  
 **Direct Reports:** None  
 **Employment Type:** Full-time  
 **Gaji:** RM1,700  

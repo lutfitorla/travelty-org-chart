@@ -3,7 +3,7 @@
 ## Gambaran Jawatan
 **Job Title:** Tour & Logistics Coordinator  
 **Jabatan:** Operations  
-**Lapor kepada:** Operations Manager (COO)  
+**Lapor kepada:** Chief Operations Officer  
 **Direct Reports:** None  
 **Employment Type:** Full-time  
 **Gaji:** RM1,700  

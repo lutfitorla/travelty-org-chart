@@ -1,7 +1,7 @@
-# Sales & Marketing Manager (CBO) - Job Scope
+# Chief Branding Officer - Job Scope
 
 ## Gambaran Jawatan
-**Job Title:** Sales & Marketing Manager (CBO)  
+**Job Title:** Chief Branding Officer  
 **Jabatan:** Sales & Marketing  
 **Lapor kepada:** CEO / General Manager  
 **Direct Reports:** Sales Executives, Marketing Specialist  

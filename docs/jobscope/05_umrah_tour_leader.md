@@ -3,7 +3,7 @@
 ## Gambaran Jawatan
 **Job Title:** Umrah Tour Leader  
 **Jabatan:** Operations  
-**Lapor kepada:** Operations Manager (COO)  
+**Lapor kepada:** Chief Operations Officer  
 **Direct Reports:** None  
 **Employment Type:** Contract/Project-based  
 **Gaji:** RM2,500-RM3,500 per job (based on seniority)  

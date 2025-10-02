@@ -3,7 +3,7 @@
 ## Gambaran Jawatan
 **Job Title:** Sales Executive (Agent/Commission)  
 **Jabatan:** Sales & Marketing  
-**Lapor kepada:** Sales & Marketing Manager (CBO)  
+**Lapor kepada:** Chief Branding Officer  
 **Direct Reports:** None  
 **Employment Type:** Commission-based  
 **Gaji:** RM300-RM500 per passenger (based on customer volume/seniority)  

@@ -3,7 +3,7 @@
 ## Gambaran Jawatan
 **Job Title:** Marketing Specialist  
 **Jabatan:** Sales & Marketing  
-**Lapor kepada:** Sales & Marketing Manager (CBO)  
+**Lapor kepada:** Chief Branding Officer  
 **Direct Reports:** None  
 **Employment Type:** Full-time  
 **Gaji:** RM1,700

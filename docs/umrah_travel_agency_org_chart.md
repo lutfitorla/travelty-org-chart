@@ -36,7 +36,7 @@
 ### 2. Jabatan Operations
 **Lapor kepada:** CEO / General Manager
 
-#### Operations Manager (COO)
+#### Chief Operations Officer
 - **Nama:** Ustaz Ridzwan
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Menyelia perancangan pelancongan, logistik, dan pelaksanaan
@@ -45,14 +45,14 @@
 
 #### Tour & Logistics Coordinator
 - **Nama:** Kak Su?
-- **Lapor kepada:** Operations Manager (COO)
+- **Lapor kepada:** Chief Operations Officer
 - **Tanggungjawab:** Susun penerbangan, penginapan, pengangkutan dan visa
 - **Gaji:** RM1,700
 - **Bilangan:** 2
 
 #### Umrah Tour Leader
 - **Nama:** Para Mutawwif
-- **Lapor kepada:** Operations Manager (COO)
+- **Lapor kepada:** Chief Operations Officer
 - **Tanggungjawab:** Pimpin lawatan, urus kumpulan, pastikan haji lancar
 - **Gaji:** RM2,500-RM3,500 satu job (ikut seniority)
 - **Bilangan:** 4
@@ -62,7 +62,7 @@
 ### 3. Jabatan Sales & Marketing
 **Lapor kepada:** CEO / General Manager
 
-#### Sales & Marketing Manager (CBO)
+#### Chief Branding Officer
 - **Nama:** Areej
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Membangunkan strategi jualan dan kempen pemasaran
@@ -71,14 +71,14 @@
 
 #### Sales Executive (agent/Commission)
 - **Nama:** Ustaz2
-- **Lapor kepada:** Sales & Marketing Manager (CBO)
+- **Lapor kepada:** Chief Branding Officer
 - **Tanggungjawab:** Mencari pelanggan. Menjawab persoalan.
 - **Gaji:** Commission = RM300-RM500 /pax (ikut bilangan customer/senior)
 - **Bilangan:** 30
 
 #### Marketing Specialist
 - **Nama:** Rafii?
-- **Lapor kepada:** Sales & Marketing Manager (CBO)
+- **Lapor kepada:** Chief Branding Officer
 - **Tanggungjawab:** Cipta bahan promosi, urus kehadiran dalam talian
 - **Gaji:** RM1,700
 - **Bilangan:** 1
@@ -88,7 +88,7 @@
 ### 4. Jabatan Customer Service
 **Lapor kepada:** CEO / General Manager
 
-#### Customer Service Manager (CRO)
+#### Chief Relations Officer
 - **Nama:** Aiman
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Urus sokongan pelanggan dan proses maklum balas
@@ -97,7 +97,7 @@
 
 #### Customer Service Representative
 - **Nama:** Aqma + ?
-- **Lapor kepada:** Customer Service Manager (CRO)
+- **Lapor kepada:** Chief Relations Officer
 - **Tanggungjawab:** Jawab pertanyaan, selesaikan isu, berikan sokongan
 - **Gaji:** RM1,700
 - **Bilangan:** 2

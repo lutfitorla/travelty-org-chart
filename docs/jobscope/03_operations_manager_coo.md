@@ -1,7 +1,7 @@
-# Operations Manager (COO) - Job Scope
+# Chief Operations Officer - Job Scope
 
 ## Gambaran Jawatan
-**Job Title:** Operations Manager (COO)  
+**Job Title:** Chief Operations Officer  
 **Jabatan:** Operations  
 **Lapor kepada:** CEO / General Manager  
 **Direct Reports:** Tour & Logistics Coordinator, Umrah Tour Leaders  
