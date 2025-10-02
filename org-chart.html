@@ -5,309 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta Organisasi - Agensi Pelancongan Umrah</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .org-chart-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            padding: 30px;
-        }
-
-        .org-chart-title {
-            text-align: center;
-            color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .org-chart-subtitle {
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        .org-chart {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-        }
-
-        /* CEO Level */
-        .ceo-level {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .ceo-box {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 20px 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
-            position: relative;
-            z-index: 10;
-        }
-
-        .ceo-name {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .ceo-title {
-            font-size: 1em;
-            opacity: 0.9;
-        }
-
-        /* Finance Assistant */
-        .finance-assistant {
-            position: absolute;
-            right: -200px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .finance-box {
-            background: linear-gradient(135deg, #4ecdc4, #44a08d);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(78, 205, 196, 0.3);
-            min-width: 180px;
-        }
-
-        .finance-name {
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 3px;
-        }
-
-        .finance-title {
-            font-size: 0.9em;
-            opacity: 0.9;
-        }
-
-        /* Connection Lines */
-        .connection-line {
-            position: absolute;
-            background: #bdc3c7;
-            z-index: 1;
-        }
-
-        .ceo-to-finance {
-            width: 2px;
-            height: 100px;
-            right: -100px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .ceo-to-finance::after {
-            content: '';
-            position: absolute;
-            width: 200px;
-            height: 2px;
-            background: #bdc3c7;
-            top: 50%;
-            right: -200px;
-            transform: translateY(-50%);
-        }
-
-        /* Departments Level */
-        .departments-level {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            gap: 30px;
-            position: relative;
-        }
-
-        .department {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .department-title {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.1em;
-            text-align: center;
-            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
-            width: 100%;
-        }
-
-        .department-title.operations {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-        }
-
-        .department-title.sales-marketing {
-            background: linear-gradient(135deg, #f39c12, #e67e22);
-        }
-
-        .department-title.customer-service {
-            background: linear-gradient(135deg, #9b59b6, #8e44ad);
-        }
-
-        .position-box {
-            background: white;
-            border: 2px solid #ecf0f1;
-            padding: 15px 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            width: 100%;
-            max-width: 250px;
-        }
-
-        .position-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            border-color: #3498db;
-        }
-
-        .position-name {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-size: 1em;
-        }
-
-        .position-title {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            margin-bottom: 3px;
-        }
-
-        .position-count {
-            color: #95a5a6;
-            font-size: 0.8em;
-            font-style: italic;
-        }
-
-        /* CEO to Departments Connection */
-        .ceo-to-departments {
-            position: absolute;
-            width: 2px;
-            height: 40px;
-            background: #bdc3c7;
-            top: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .ceo-to-departments::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: #bdc3c7;
-            top: 0;
-            left: 0;
-        }
-
-        .ceo-to-departments::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: #bdc3c7;
-            bottom: 0;
-            left: 0;
-        }
-
-        /* Department to Positions Connections */
-        .department-connection {
-            position: absolute;
-            width: 2px;
-            height: 20px;
-            background: #bdc3c7;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .department-connection::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: #bdc3c7;
-            top: 0;
-            left: 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .finance-assistant {
-                position: static;
-                transform: none;
-                margin-top: 20px;
-            }
-            
-            .ceo-to-finance {
-                display: none;
-            }
-            
-            .departments-level {
-                flex-direction: column;
-                gap: 40px;
-            }
-            
-            .org-chart-container {
-                padding: 20px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .org-chart-title {
-                font-size: 2em;
-            }
-            
-            .org-chart-subtitle {
-                font-size: 1em;
-            }
-            
-            .ceo-box {
-                padding: 15px 20px;
-            }
-            
-            .ceo-name {
-                font-size: 1.2em;
-            }
-        }
-    </style>
 </head>
-<body>
+<body class="org-chart-page">
     <div class="org-chart-container">
         <h1 class="org-chart-title">Carta Organisasi</h1>
         <p class="org-chart-subtitle">Agensi Pelancongan Umrah</p>
-        <nav class="navigation" style="text-align: center; margin-bottom: 30px;">
-            <a href="org-chart.html" class="nav-link active" style="display: inline-block; margin: 0 10px; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">📊 Visual Diagram</a>
-            <a href="index.html" class="nav-link" style="display: inline-block; margin: 0 10px; padding: 10px 20px; background: #ecf0f1; color: #2c3e50; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">📋 Detailed List</a>
+        <nav class="navigation org-chart-nav">
+            <a href="org-chart.html" class="nav-link active">📊 Visual Diagram</a>
+            <a href="index.html" class="nav-link">📋 Detailed List</a>
         </nav>
         
         <div class="org-chart">
@@ -322,7 +27,7 @@
                 <div class="finance-assistant">
                     <div class="finance-box">
                         <div class="finance-name">Finance Assistant</div>
-                        <div class="finance-title">RM1,700</div>
+                        <div class="finance-title">Mengendalikan kewangan dan simpan kira</div>
                     </div>
                 </div>
                 
@@ -340,19 +45,19 @@
                     <div class="position-box">
                         <div class="position-name">Ustaz Ridzwan</div>
                         <div class="position-title">Operations Manager (COO)</div>
-                        <div class="position-count">RM3,000 (ditangguh)</div>
+                        <div class="position-count">Menyelia perancangan pelancongan, logistik, dan pelaksanaan</div>
                     </div>
                     
                     <div class="position-box">
                         <div class="position-name">Kak Su?</div>
                         <div class="position-title">Tour & Logistics Coordinator</div>
-                        <div class="position-count">2 orang - RM1,700</div>
+                        <div class="position-count">Susun penerbangan, penginapan, pengangkutan dan visa</div>
                     </div>
                     
                     <div class="position-box">
                         <div class="position-name">Para Mutawwif</div>
                         <div class="position-title">Umrah Tour Leader</div>
-                        <div class="position-count">4 orang - RM2,500-RM3,500</div>
+                        <div class="position-count">Pimpin lawatan, urus kumpulan, pastikan haji lancar</div>
                     </div>
                 </div>
                 
@@ -364,19 +69,19 @@
                     <div class="position-box">
                         <div class="position-name">Areej</div>
                         <div class="position-title">Sales & Marketing Manager (CBO)</div>
-                        <div class="position-count">RM3,000 (ditangguh)</div>
+                        <div class="position-count">Membangunkan strategi jualan dan kempen pemasaran</div>
                     </div>
                     
                     <div class="position-box">
                         <div class="position-name">Ustaz2</div>
                         <div class="position-title">Sales Executive (Agent)</div>
-                        <div class="position-count">30 orang - Commission RM300-RM500</div>
+                        <div class="position-count">Mencari pelanggan. Menjawab persoalan.</div>
                     </div>
                     
                     <div class="position-box">
                         <div class="position-name">Rafii?</div>
                         <div class="position-title">Marketing Specialist</div>
-                        <div class="position-count">RM1,700</div>
+                        <div class="position-count">Cipta bahan promosi, urus kehadiran dalam talian</div>
                     </div>
                 </div>
                 
@@ -388,13 +93,13 @@
                     <div class="position-box">
                         <div class="position-name">Aiman</div>
                         <div class="position-title">Customer Service Manager (CRO)</div>
-                        <div class="position-count">RM3,000 (ditangguh)</div>
+                        <div class="position-count">Urus sokongan pelanggan dan proses maklum balas</div>
                     </div>
                     
                     <div class="position-box">
                         <div class="position-name">Aqma + ?</div>
                         <div class="position-title">Customer Service Representative</div>
-                        <div class="position-count">2 orang - RM1,700</div>
+                        <div class="position-count">Jawab pertanyaan, selesaikan isu, berikan sokongan</div>
                     </div>
                 </div>
             </div>
@@ -404,24 +109,24 @@
         </div>
         
         <!-- Summary Section -->
-        <div style="margin-top: 50px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
-            <h3 style="color: #2c3e50; text-align: center; margin-bottom: 20px;">Ringkasan Organisasi</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: center;">
-                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <div style="font-weight: bold; color: #e74c3c; font-size: 1.5em;">44</div>
-                    <div style="color: #7f8c8d;">Jumlah Keseluruhan</div>
+        <div class="org-chart-summary">
+            <h3>Ringkasan Organisasi</h3>
+            <div class="org-chart-summary-grid">
+                <div class="org-chart-summary-card">
+                    <div class="org-chart-summary-number total">44</div>
+                    <div class="org-chart-summary-label">Jumlah Keseluruhan</div>
                 </div>
-                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <div style="font-weight: bold; color: #f39c12; font-size: 1.5em;">32</div>
-                    <div style="color: #7f8c8d;">Sales & Marketing</div>
+                <div class="org-chart-summary-card">
+                    <div class="org-chart-summary-number sales">32</div>
+                    <div class="org-chart-summary-label">Sales & Marketing</div>
                 </div>
-                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <div style="font-weight: bold; color: #e74c3c; font-size: 1.5em;">7</div>
-                    <div style="color: #7f8c8d;">Operations</div>
+                <div class="org-chart-summary-card">
+                    <div class="org-chart-summary-number operations">7</div>
+                    <div class="org-chart-summary-label">Operations</div>
                 </div>
-                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                    <div style="font-weight: bold; color: #9b59b6; font-size: 1.5em;">3</div>
-                    <div style="color: #7f8c8d;">Customer Service</div>
+                <div class="org-chart-summary-card">
+                    <div class="org-chart-summary-number customer-service">3</div>
+                    <div class="org-chart-summary-label">Customer Service</div>
                 </div>
             </div>
         </div>

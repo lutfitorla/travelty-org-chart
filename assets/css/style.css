@@ -338,3 +338,417 @@ h5 {
         font-size: 1rem;
     }
 }
+
+/* ===========================================
+   ORG CHART VISUAL DIAGRAM STYLES
+   =========================================== */
+
+/* Org Chart Specific Body Override */
+body.org-chart-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Org Chart Navigation */
+.org-chart-nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.org-chart-nav .nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.org-chart-nav .nav-link.active {
+    background: #3498db;
+    color: white;
+}
+
+.org-chart-nav .nav-link:not(.active) {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.org-chart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.org-chart-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.org-chart-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* CEO Level */
+.ceo-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ceo-box {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.ceo-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ceo-title {
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+/* Finance Assistant */
+.finance-assistant {
+    position: absolute;
+    right: -250px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.finance-box {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(78, 205, 196, 0.3);
+    min-width: 200px;
+    max-width: 220px;
+}
+
+.finance-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.finance-title {
+    font-size: 0.85em;
+    opacity: 0.9;
+    line-height: 1.3;
+}
+
+/* Connection Lines */
+.connection-line {
+    position: absolute;
+    background: #34495e;
+    z-index: 1;
+}
+
+.ceo-to-finance {
+    width: 3px;
+    height: 80px;
+    right: -125px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ceo-to-finance::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: #34495e;
+    top: 50%;
+    right: -250px;
+    transform: translateY(-50%);
+}
+
+/* Departments Level */
+.departments-level {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+}
+
+.department {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.department-title {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+    width: 100%;
+}
+
+.department-title.operations {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.department-title.sales-marketing {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.department-title.customer-service {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.position-box {
+    background: white;
+    border: 2px solid #ecf0f1;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+}
+
+.position-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #3498db;
+}
+
+.position-name {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.position-title {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+.position-count {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    font-style: normal;
+    line-height: 1.3;
+    margin-top: 5px;
+}
+
+/* CEO to Departments Connection */
+.ceo-to-departments {
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background: #34495e;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ceo-to-departments::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #34495e;
+    top: 0;
+    left: 0;
+}
+
+.ceo-to-departments::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #34495e;
+    bottom: 0;
+    left: 0;
+}
+
+/* Department to Positions Connections */
+.department-connection {
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    background: #34495e;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.department-connection::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #34495e;
+    top: 0;
+    left: 0;
+}
+
+/* Position Box Connections */
+.position-box::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background: #34495e;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #34495e;
+    top: -20px;
+    left: 0;
+}
+
+/* Org Chart Responsive Design */
+@media (max-width: 1200px) {
+    .finance-assistant {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        order: 2;
+    }
+    
+    .ceo-to-finance {
+        display: none;
+    }
+    
+    .ceo-level {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .departments-level {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .org-chart-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .org-chart-title {
+        font-size: 2em;
+    }
+    
+    .org-chart-subtitle {
+        font-size: 1em;
+    }
+    
+    .ceo-box {
+        padding: 15px 20px;
+    }
+    
+    .ceo-name {
+        font-size: 1.2em;
+    }
+}
+
+/* Org Chart Summary Section */
+.org-chart-summary {
+    margin-top: 50px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.org-chart-summary h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.org-chart-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.org-chart-summary-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.org-chart-summary-number {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.org-chart-summary-number.total {
+    color: #e74c3c;
+}
+
+.org-chart-summary-number.sales {
+    color: #f39c12;
+}
+
+.org-chart-summary-number.operations {
+    color: #e74c3c;
+}
+
+.org-chart-summary-number.customer-service {
+    color: #9b59b6;
+}
+
+.org-chart-summary-label {
+    color: #7f8c8d;
+}
