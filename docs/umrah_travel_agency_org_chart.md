@@ -25,10 +25,10 @@
 **Lapor kepada:** CEO / General Manager
 
 #### Finance Assistant
-- **Nama:** [Perlu diisi]
+- **Nama:** Wani
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Mengendalikan kewangan dan simpan kira
-- **Gaji:** RM1,700
+- **Gaji:** RM1,700 (ditangguh)
 - **Bilangan:** 1
 
 ---
@@ -36,7 +36,7 @@
 ### 2. Jabatan Operations
 **Lapor kepada:** CEO / General Manager
 
-#### Chief Operations Officer
+#### Chief Operations Officer (COO)
 - **Nama:** Ustaz Ridzwan
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Menyelia perancangan pelancongan, logistik, dan pelaksanaan
@@ -45,24 +45,31 @@
 
 #### Tour & Logistics Coordinator
 - **Nama:** Kak Su?
-- **Lapor kepada:** Chief Operations Officer
+- **Lapor kepada:** Chief Operations Officer (COO)
 - **Tanggungjawab:** Susun penerbangan, penginapan, pengangkutan dan visa
 - **Gaji:** RM1,700
 - **Bilangan:** 2
 
 #### Umrah Tour Leader
 - **Nama:** Para Mutawwif
-- **Lapor kepada:** Chief Operations Officer
+- **Lapor kepada:** Chief Operations Officer (COO)
 - **Tanggungjawab:** Pimpin lawatan, urus kumpulan, pastikan haji lancar
 - **Gaji:** RM2,500-RM3,500 satu job (ikut seniority)
-- **Bilangan:** 4
+- **Bilangan:** 0 (project-based contractors)
+
+#### Staff Admin
+- **Nama:** [Perlu diisi]
+- **Lapor kepada:** Chief Operations Officer (COO)
+- **Tanggungjawab:** Airport duty (checkin), handle roadshow, setup registration counter, manage database phone/email
+- **Gaji:** RM1,700
+- **Bilangan:** 1
 
 ---
 
 ### 3. Jabatan Sales & Marketing
 **Lapor kepada:** CEO / General Manager
 
-#### Chief Branding Officer
+#### Chief Branding Officer (CBO)
 - **Nama:** Areej
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Membangunkan strategi jualan dan kempen pemasaran
@@ -71,34 +78,41 @@
 
 #### Sales Executive (agent/Commission)
 - **Nama:** Ustaz2
-- **Lapor kepada:** Chief Branding Officer
+- **Lapor kepada:** Chief Branding Officer (CBO)
 - **Tanggungjawab:** Mencari pelanggan. Menjawab persoalan.
 - **Gaji:** Commission = RM300-RM500 /pax (ikut bilangan customer/senior)
-- **Bilangan:** 30
+- **Bilangan:** 0 (commission-based)
 
 #### Marketing Specialist
 - **Nama:** Rafii?
-- **Lapor kepada:** Chief Branding Officer
+- **Lapor kepada:** Chief Branding Officer (CBO)
 - **Tanggungjawab:** Cipta bahan promosi, urus kehadiran dalam talian
 - **Gaji:** RM1,700
 - **Bilangan:** 1
 
+#### Customer Service Representative
+- **Nama:** Aqma + ?
+- **Lapor kepada:** Chief Branding Officer (CBO)
+- **Tanggungjawab:** Jawab pertanyaan, selesaikan isu, berikan sokongan
+- **Gaji:** RM1,700 (ditangguh)
+- **Bilangan:** 2
+
 ---
 
-### 4. Jabatan Customer Service
+### 4. Jabatan Corporate Sales & Relations
 **Lapor kepada:** CEO / General Manager
 
-#### Chief Relations Officer
+#### Chief Relations Officer (CRO)
 - **Nama:** Aiman
 - **Lapor kepada:** CEO / General Manager
 - **Tanggungjawab:** Urus sokongan pelanggan dan proses maklum balas
 - **Gaji:** RM3,000 (ditangguh)
 - **Bilangan:** 1
 
-#### Customer Service Representative
-- **Nama:** Aqma + ?
-- **Lapor kepada:** Chief Relations Officer
-- **Tanggungjawab:** Jawab pertanyaan, selesaikan isu, berikan sokongan
+#### Corporate Sales
+- **Nama:** [Perlu diisi]
+- **Lapor kepada:** Chief Relations Officer (CRO)
+- **Tanggungjawab:** Handle corporate clients, B2B sales, group bookings untuk companies
 - **Gaji:** RM1,700
 - **Bilangan:** 2
 
@@ -109,11 +123,11 @@
 ### Jumlah Bilangan Mengikut Jabatan:
 - **Executive:** 1 orang
 - **Finance:** 1 orang
-- **Operations:** 7 orang (1 Manager + 2 Coordinators + 4 Tour Leaders)
-- **Sales & Marketing:** 32 orang (1 Manager + 30 Sales Executives + 1 Marketing Specialist)
-- **Customer Service:** 3 orang (1 Manager + 2 Representatives)
+- **Operations:** 4 orang (1 Manager + 2 Coordinators + 1 Staff Admin)
+- **Sales & Marketing:** 4 orang (1 Manager + 1 Marketing Specialist + 2 Customer Service Representatives)
+- **Corporate Sales & Relations:** 3 orang (1 Manager + 2 Corporate Sales)
 
-**Jumlah Keseluruhan:** 44 orang
+**Jumlah Keseluruhan:** 13 orang
 
 ### Struktur Gaji:
 - **Executive Level:** RM3,000 (ditangguh)
