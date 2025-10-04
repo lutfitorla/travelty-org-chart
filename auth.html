@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelty Travel & Tours Sdn Bhd - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .auth-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .auth-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .auth-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+        
+        .auth-subtitle {
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .auth-form {
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 500;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.2s ease;
+            box-sizing: border-box;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .auth-button {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 10px;
+        }
+        
+        .auth-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .auth-button:active {
+            transform: translateY(0);
+        }
+        
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+        
+        .success-message {
+            background: #c6f6d5;
+            color: #2f855a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+        
+        .auth-footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <img src="assets/images/travelty-cropped-logo_banner.jpg" alt="Travelty Travel & Tours Sdn Bhd" class="auth-logo">
+            <h1 class="auth-title">Selamat Datang</h1>
+            <p class="auth-subtitle">Masukkan kata laluan untuk mengakses sistem</p>
+            
+            <div id="error-message" class="error-message"></div>
+            <div id="success-message" class="success-message"></div>
+            
+            <form class="auth-form" id="auth-form">
+                <div class="form-group">
+                    <label for="password" class="form-label">Kata Laluan</label>
+                    <input type="password" id="password" class="form-input" placeholder="Masukkan kata laluan" required>
+                </div>
+                <button type="submit" class="auth-button">Masuk</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>&copy; 2024 Travelty Travel & Tours Sdn Bhd</p>
+                <p>Sistem Pengurusan Organisasi & Kalkulator Kos</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/auth.js"></script>
+    <script>
+        // Authentication logic for login page
+        const SESSION_KEY = 'travelty_auth';
+        const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+        // Check if user is already authenticated
+        function checkAuth() {
+            const authData = localStorage.getItem(SESSION_KEY);
+            if (authData) {
+                const { timestamp, authenticated } = JSON.parse(authData);
+                const now = Date.now();
+                
+                // Check if session is still valid
+                if (authenticated && (now - timestamp) < SESSION_DURATION) {
+                    // Redirect to main page
+                    redirectToMain();
+                    return true;
+                } else {
+                    // Session expired, clear it
+                    localStorage.removeItem(SESSION_KEY);
+                }
+            }
+            return false;
+        }
+
+        // Set authentication session
+        function setAuth() {
+            const authData = {
+                authenticated: true,
+                timestamp: Date.now()
+            };
+            localStorage.setItem(SESSION_KEY, JSON.stringify(authData));
+        }
+
+        // Redirect to main page
+        function redirectToMain() {
+            // Check if there's a specific page to redirect to
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirect = urlParams.get('redirect');
+            
+            if (redirect && (redirect === 'index.html' || redirect === 'calculator.html')) {
+                window.location.href = redirect;
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            const successDiv = document.getElementById('success-message');
+            
+            successDiv.style.display = 'none';
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            
+            // Hide error after 5 seconds
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            const errorDiv = document.getElementById('error-message');
+            const successDiv = document.getElementById('success-message');
+            
+            errorDiv.style.display = 'none';
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+        }
+
+        // Handle form submission with encrypted password verification
+        document.getElementById('auth-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            // Disable button during verification
+            submitButton.disabled = true;
+            submitButton.textContent = 'Memeriksa...';
+            
+            try {
+                // Use the verifyPassword function from auth.js
+                const isValid = await verifyPassword(password);
+                
+                if (isValid) {
+                    showSuccess('Kata laluan betul! Sedang mengalihkan...');
+                    setAuth();
+                    
+                    // Redirect after a short delay
+                    setTimeout(() => {
+                        redirectToMain();
+                    }, 1000);
+                } else {
+                    showError('Kata laluan tidak betul. Sila cuba lagi.');
+                    document.getElementById('password').value = '';
+                    document.getElementById('password').focus();
+                }
+            } catch (error) {
+                showError('Ralat sistem. Sila cuba lagi.');
+                console.error('Authentication error:', error);
+            } finally {
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Masuk';
+            }
+        });
+
+        // Check authentication on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuth();
+        });
+
+        // Allow Enter key to submit
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('auth-form').dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
+</body>
+</html>
