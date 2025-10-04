@@ -110,8 +110,11 @@ function addLogoutButton() {
     document.body.appendChild(logoutButton);
 }
 
-// Auto-initialize when DOM is loaded
+// Auto-initialize when DOM is loaded (only for protected pages, not auth.html)
 document.addEventListener('DOMContentLoaded', function() {
-    initAuth();
-    addLogoutButton();
+    // Only run auth check if we're not on the auth page
+    if (!window.location.pathname.includes('auth.html')) {
+        initAuth();
+        addLogoutButton();
+    }
 });
