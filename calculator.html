@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelty Travel & Tours Sdn Bhd - Umrah Cost Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="company-banner">
+                <img src="assets/images/travelty-cropped-logo_banner.jpg" alt="Travelty Travel & Tours Sdn Bhd" class="banner-logo">
+            </div>
+            <h1>Travelty Travel & Tours Sdn Bhd</h1>
+            <h2>Umrah Cost Calculator</h2>
+            <p class="subtitle">Kalkulator Kos Perjalanan Umrah</p>
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">📊📋 Organizational Dashboard</a>
+                <a href="calculator.html" class="nav-link active">💰🧮 Cost Calculator</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Calculator Section -->
+            <section class="calculator-section">
+                <h3>Kalkulator Kos Umrah</h3>
+                <p class="calculator-description">
+                    Gunakan kalkulator ini untuk mengira kos perjalanan Umrah. Masukkan bilangan pax dan kos akan dikira secara automatik.
+                </p>
+                
+                <div class="calculator-container" style="display: flex; flex-direction: column; gap: 30px;">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label for="pax-count">Bilangan Pax:</label>
+                            <input type="number" id="pax-count" value="30" min="1" max="100">
+                        </div>
+                    </div>
+
+                    <div class="cost-items-container">
+                        <div class="cost-column">
+                            <h4 class="column-title">Kos Berkumpulan (Group Costs)</h4>
+                            <p class="column-description">Kos yang dibahagikan mengikut bilangan pax atau bilik hotel</p>
+                            
+                            <div class="cost-items">
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Hotel Makkah</span>
+                                        <span class="item-unit">per malam (Quad)</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="hotel-makkah" value="270" min="0">
+                                        <input type="number" class="quantity-input" data-item="hotel-makkah" value="7" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="hotel-makkah">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Hotel Madinah</span>
+                                        <span class="item-unit">per malam (Quad)</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="hotel-madinah" value="600" min="0">
+                                        <input type="number" class="quantity-input" data-item="hotel-madinah" value="3" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="hotel-madinah">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Hotel Taif</span>
+                                        <span class="item-unit">per malam (Quad)</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="hotel-taif" value="300" min="0">
+                                        <input type="number" class="quantity-input" data-item="hotel-taif" value="0" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="hotel-taif">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Bus</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="bus" value="4500" min="0">
+                                        <input type="number" class="quantity-input" data-item="bus" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="bus">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Mutawwif</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="mutawwif" value="8000" min="0">
+                                        <input type="number" class="quantity-input" data-item="mutawwif" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="mutawwif">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Photography</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="photography" value="1000" min="0">
+                                        <input type="number" class="quantity-input" data-item="photography" value="0" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="photography">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Baksis</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="baksis" value="1000" min="0">
+                                        <input type="number" class="quantity-input" data-item="baksis" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="baksis">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Ground staff</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="ground-staff" value="3000" min="0">
+                                        <input type="number" class="quantity-input" data-item="ground-staff" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="ground-staff">RM 0</div>
+                                </div>
+                            </div>
+                            
+                            <div class="column-total-card">
+                                <div class="total-card-content">
+                                    <span class="total-label">Jumlah Kos Berkumpulan</span>
+                                    <span class="total-amount" id="group-total">RM 0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cost-column">
+                            <h4 class="column-title">Kos Individu (Individual Costs)</h4>
+                            <p class="column-description">Kos yang dikenakan secara individu untuk setiap pax</p>
+                            
+                            <div class="cost-items">
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Flight Ticket</span>
+                                        <span class="item-unit">per pax</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="flight" value="3550" min="0">
+                                        <input type="number" class="quantity-input" data-item="flight" value="1" min="0" max="1">
+                                    </div>
+                                    <div class="item-total" data-item="flight">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Visa Umrah/Tourist</span>
+                                        <span class="item-unit">per pax</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="visa" value="550" min="0">
+                                        <input type="number" class="quantity-input" data-item="visa" value="1" min="0" max="1">
+                                    </div>
+                                    <div class="item-total" data-item="visa">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Zamzam</span>
+                                        <span class="item-unit">per pax</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="zamzam" value="20" min="0">
+                                        <input type="number" class="quantity-input" data-item="zamzam" value="1" min="0" max="1">
+                                    </div>
+                                    <div class="item-total" data-item="zamzam">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Travel Kit</span>
+                                        <span class="item-unit">per pax</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="travel-kit" value="200" min="0">
+                                        <input type="number" class="quantity-input" data-item="travel-kit" value="1" min="0" max="1">
+                                    </div>
+                                    <div class="item-total" data-item="travel-kit">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Makan Mekah</span>
+                                        <span class="item-unit">per hari</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="makan-mekah" value="150" min="0">
+                                        <input type="number" class="quantity-input" data-item="makan-mekah" value="0" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="makan-mekah">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Makan Madinah</span>
+                                        <span class="item-unit">per hari</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="makan-madinah" value="150" min="0">
+                                        <input type="number" class="quantity-input" data-item="makan-madinah" value="0" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="makan-madinah">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Haramain Train</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="haramain-train" value="200" min="0">
+                                        <input type="number" class="quantity-input" data-item="haramain-train" value="0" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="haramain-train">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Staff/Admin</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="staff-admin" value="100" min="0">
+                                        <input type="number" class="quantity-input" data-item="staff-admin" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="staff-admin">RM 0</div>
+                                </div>
+
+                                <div class="cost-item">
+                                    <div class="item-info">
+                                        <span class="item-name">Lain2</span>
+                                        <span class="item-unit">per trip</span>
+                                    </div>
+                                    <div class="item-inputs">
+                                        <input type="number" class="cost-input" data-item="lain2" value="200" min="0">
+                                        <input type="number" class="quantity-input" data-item="lain2" value="1" min="0">
+                                    </div>
+                                    <div class="item-total" data-item="lain2">RM 0</div>
+                                </div>
+                            </div>
+                            
+                            <div class="column-total-card">
+                                <div class="total-card-content">
+                                    <span class="total-label">Jumlah Kos Individu</span>
+                                    <span class="total-amount" id="individual-total">RM 0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-summary" style="position: static; order: 2;">
+                        <div class="summary-card">
+                            <h4>Ringkasan Kos & Keuntungan</h4>
+                            
+                            <div class="summary-section">
+                                <h5>Kos Trip</h5>
+                                <div class="summary-item">
+                                    <span>Bilangan Pax:</span>
+                                    <span class="pax-count-display" id="pax-count-display">30</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Kos per Pax:</span>
+                                    <span class="total-cost" id="total-cost">RM 0</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Jumlah Kos Trip:</span>
+                                    <span class="total-trip-cost" id="total-trip-cost">RM 0</span>
+                                </div>
+                            </div>
+
+                            <div class="summary-section">
+                                <h5>Harga Jualan & Keuntungan</h5>
+                                <div class="summary-item">
+                                    <label for="trip-price">Harga Trip per Pax:</label>
+                                    <input type="number" id="trip-price" value="7790" min="0" style="width: 120px; padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
+                                </div>
+                                <div class="summary-item">
+                                    <span>Keuntungan per Pax:</span>
+                                    <span class="profit-per-pax" id="profit-per-pax">RM 0</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Jumlah Keuntungan:</span>
+                                    <span class="total-profit" id="total-profit">RM 0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instructions Section -->
+            <section class="instructions-section">
+                <h3>Cara Menggunakan Kalkulator</h3>
+                <div class="instructions-grid">
+                    <div class="instruction-card">
+                        <h4>1. Masukkan Bilangan Pax</h4>
+                        <p>Masukkan bilangan peserta dalam kotak "Bilangan Pax" di bahagian atas.</p>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>2. Laraskan Kos Item</h4>
+                        <p>Ubah kos setiap item mengikut keperluan. Kos akan dikira semula secara automatik.</p>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>3. Laraskan Kuantiti</h4>
+                        <p>Ubah kuantiti untuk item seperti hotel, makanan, dan perkhidmatan lain.</p>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>4. Lihat Ringkasan</h4>
+                        <p>Jumlah kos akan dipaparkan di bahagian bawah dengan kos per pax.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Travelty Travel & Tours Sdn Bhd. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
